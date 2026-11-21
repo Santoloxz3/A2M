@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111214">
+  <meta name="description" content="A²M Automation: progettazione offline, programmazione robot, software PLC e commissioning. Un team con oltre 15 anni di esperienza nell'automazione industriale.">
+  <title>A²M Automation | Robotica, Software, Automazione</title>
+  <link rel="alternate" hreflang="it" href="https://a2m-automation.wolfoloxone.chatgpt.site/">
+  <link rel="alternate" hreflang="en" href="https://a2m-automation.wolfoloxone.chatgpt.site/en/">
+  <link rel="canonical" href="https://a2m-automation.wolfoloxone.chatgpt.site/">
+  <link rel="stylesheet" href="/assets/site-bilingual.css">
+  <script>
+    let viaLanguageSelector = false;
+    try {
+      viaLanguageSelector = sessionStorage.getItem('a2m-language-target') === location.pathname;
+      sessionStorage.removeItem('a2m-language-target');
+    } catch {}
+    const isReload = performance.getEntriesByType('navigation')[0]?.type === 'reload';
+    if (!viaLanguageSelector && !matchMedia('(prefers-reduced-motion: reduce)').matches &&
+        (isReload || !location.hash || location.hash === '#top')) {
+      document.documentElement.classList.add('intro-active');
+      window.setTimeout(() => document.documentElement.classList.remove('intro-active'), 7500);
+    }
+  </script>
+</head>
+<body>
+  <div class="loader">
+    <video class="intro-video" playsinline preload="none" aria-hidden="true"></video>
+    <button type="button" class="button intro-sound" aria-pressed="true">Disattiva audio</button>
+    <button type="button" class="button intro-skip">Salta intro</button>
+  </div>
+  <header class="site-header" id="top">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="A²M Automation, pagina iniziale"><img src="/assets/a2m-brand-horizontal.png" width="534" height="74" alt=""></a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigazione principale"><a href="#servizi">Competenze</a><a href="#metodo">Metodo</a><a href="#tecnologie">Tecnologie</a><a href="#standard">Standard</a><a href="#contatti">Contatti</a><span class="language-selector" role="group" aria-label="Lingua">
+        <a class="language-option" href="/" lang="it" hreflang="it" aria-label="Italiano" title="Italiano" aria-current="page"><svg aria-hidden="true" viewBox="0 0 24 16"><path fill="#009246" d="M0 0h8v16H0z"/><path fill="#fff" d="M8 0h8v16H8z"/><path fill="#ce2b37" d="M16 0h8v16h-8z"/></svg><span>IT</span></a>
+        <a class="language-option" href="/en/" lang="en" hreflang="en" aria-label="English" title="English"><svg aria-hidden="true" viewBox="0 0 24 16"><path fill="#173363" d="M0 0h24v16H0z"/><path stroke="#fff" stroke-width="4" d="m0 0 24 16m0-16L0 16"/><path stroke="#cf1835" stroke-width="1.4" d="m0 0 24 16m0-16L0 16"/><path stroke="#fff" stroke-width="5.3" d="M12 0v16M0 8h24"/><path stroke="#cf1835" stroke-width="3" d="M12 0v16M0 8h24"/></svg><span>EN</span></a>
+      </span></nav>
+      <a class="nav-cta" href="#contatti">Parliamo del progetto</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Apri menu" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <video class="hero-film" muted loop playsinline preload="none" poster="https://robopowersolutions.de/videos/hero_poster.jpg" aria-hidden="true">
+        <source src="https://robopowersolutions.de/videos/hero-loop.mp4" type="video/mp4">
+      </video>
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Dall'offline alla produzione</div>
+          <h1 id="hero-title">Automazione<br>senza <em>attriti.</em></h1>
+          <p class="hero-lead">Progettazione offline, robotica e software industriale: un team con oltre 15 anni di esperienza per accompagnare ogni impianto fino all'avvio in produzione.</p>
+          <div class="hero-actions"><a class="button primary" href="#servizi">Scopri le competenze</a><a class="button" href="#contatti">Descrivici la tua linea</a></div>
+          <p class="hero-note">Tecnologia al servizio delle persone, dal modello digitale al campo.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="line-metrics"><div class="wrap metrics reveal-metrics">
+      <div class="metrics-intro">Esperienza pratica, competenze coordinate, supporto diretto al progetto.</div>
+      <div class="metric"><strong>15+ anni</strong><span>nel settore industriale</span></div>
+      <div class="metric"><strong>End-to-end</strong><span>offline e onsite</span></div>
+      <div class="metric"><strong>Multi-brand</strong><span>robot, PLC e reti</span></div>
+    </div></div>
+
+    <section class="services" id="servizi">
+      <div class="wrap">
+        <div class="services-intro reveal">
+          <div><div class="eyebrow">Le nostre competenze</div><h2 class="section-title">Un processo integrato, dalla simulazione alla linea.</h2></div>
+          <p class="section-copy">Mettiamo in relazione progettazione offline, programmazione robot, logiche PLC e avviamento. Un coordinamento tecnico pensato per ridurre gli imprevisti e rendere più fluido il passaggio alla produzione.</p>
+        </div>
+        <div class="service-grid reveal">
+          <article class="service-item">
+            <div class="service-photo">
+              <div class="offline-photo">
+                <img width="1000" height="667" src="/assets/showcase/servizio-offline.webp" alt="Postazione di progettazione offline con una cella robotizzata aperta in Siemens Process Simulate" loading="lazy" decoding="async">
+                <img class="offline-screen" width="800" height="433" src="/assets/showcase/process-simulate.jpg" alt="" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <h3>Progettazione offline</h3><p>Studio delle celle, definizione delle sequenze, verifica delle traiettorie e ottimizzazione del processo prima dell'avvio fisico.</p>
+          </article>
+          <article class="service-item"><img class="service-photo" width="1000" height="563" src="/assets/showcase/servizio-robot.webp" alt="Robot KUKA al lavoro in una cella di saldatura ad arco" loading="lazy" decoding="async"><h3>Programmazione robot</h3><p>Programmazione, messa a punto e ottimizzazione di robot industriali multi-brand, con attenzione a qualità e tempi ciclo.</p></article>
+          <article class="service-item"><img class="service-photo" width="640" height="427" src="/assets/showcase/servizio-plc.webp" alt="" loading="lazy" decoding="async"><h3>Software PLC e reti</h3><p>Supporto allo sviluppo e all'integrazione PLC, interfacce di processo e comunicazioni industriali.</p></article>
+          <article class="service-item"><img class="service-photo" width="640" height="427" src="/assets/showcase/servizio-commissioning.webp" alt="" loading="lazy" decoding="async"><h3>Commissioning</h3><p>Avviamento onsite, integrazione con impianto e produzione, ricerca guasti e supporto fino alla stabilizzazione.</p></article>
+        </div>
+        <div class="services-band reveal"><p>Un unico filo tecnico collega il modello virtuale alle condizioni reali della linea.</p><span class="flow-signature"><span>A²M</span><span>Engineering Flow</span></span></div>
+      </div>
+    </section>
+
+    <section class="method" id="metodo">
+      <div class="wrap">
+        <div class="method-head reveal"><div><div class="eyebrow">Il nostro metodo</div><h2 class="section-title">Preparare prima.<br>Avviare meglio.</h2></div><p class="section-copy">La collaborazione parte dagli obiettivi del cliente e mantiene allineati team, software e impianto. Ogni passaggio serve a rendere quello successivo più chiaro.</p></div>
+        <div class="steps" id="method-steps">
+          <article class="step"><span class="step-index">FASE 01</span><h3>Capire il processo</h3><p>Analizziamo flussi, standard, vincoli di linea e risultati attesi insieme al cliente.</p></article>
+          <article class="step"><span class="step-index">FASE 02</span><h3>Progettare offline</h3><p>Prepariamo la cella digitale, le sequenze e i programmi, verificando accessi e traiettorie.</p></article>
+          <article class="step"><span class="step-index">FASE 03</span><h3>Integrare onsite</h3><p>Portiamo il lavoro in campo, allineando robot, PLC, reti e condizioni reali dell'impianto.</p></article>
+          <article class="step"><span class="step-index">FASE 04</span><h3>Stabilizzare</h3><p>Affiniamo ciclo e qualità con le persone della linea fino alla fase di avvio produttivo.</p></article>
+        </div>
+        <div class="method-note">
+          <i></i><span>Possiamo intervenire su una singola fase o seguire il percorso in modo coordinato.</span>
+          <button class="method-loop-toggle" type="button" aria-controls="method-steps" hidden>Ferma animazione</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="visuals" aria-labelledby="visual-title">
+      <div class="wrap">
+        <div class="visual-head">
+          <div class="eyebrow">Progettazione e controllo</div>
+          <h2 class="section-title reveal" id="visual-title">Dal modello digitale alla logica di controllo.</h2>
+        </div>
+        <div class="media-grid reveal">
+          <article class="media-panel showcase-panel" aria-labelledby="cell-title">
+            <div class="showcase-label">Programmazione offline</div>
+            <div class="showcase-frame">
+              <video class="showcase-video" muted playsinline controls loop preload="none"
+                poster="/assets/showcase/cella-robotizzata.webp"
+                aria-label="Primi 15 secondi della simulazione della cella robotizzata">
+                <source src="/assets/showcase/cella-robotizzata.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="showcase-caption"><h3 id="cell-title">Cella robotizzata</h3><span>Simulazione · 15 s</span></div>
+          </article>
+          <article class="media-panel showcase-panel" aria-labelledby="plc-media-title" data-carousel>
+            <div class="showcase-label">Controllo e automazione</div>
+            <div class="showcase-frame plc-slides">
+              <figure class="plc-slide"><img width="761" height="403" src="/assets/showcase/tia-logica.webp" alt="Siemens TIA Portal, logica PLC e tabella di controllo" loading="lazy" decoding="async"></figure>
+              <figure class="plc-slide" hidden><img width="723" height="424" src="/assets/showcase/tia-graph.webp" alt="Siemens TIA Portal, sequenza SIMATIC GRAPH" loading="lazy" decoding="async"></figure>
+              <figure class="plc-slide" hidden><img width="799" height="718" src="/assets/showcase/rslogix.webp" alt="RSLogix 5000, editor Structured Text" loading="lazy" decoding="async"></figure>
+            </div>
+            <div class="showcase-caption">
+              <div><h3 id="plc-media-title">Programmazione PLC</h3><span data-slide-caption>TIA Portal · logica PLC</span></div>
+              <div class="slide-controls" hidden>
+                <button type="button" data-prev aria-label="Schermata precedente">‹</button>
+                <button type="button" data-toggle aria-label="Metti in pausa le slide" title="Metti in pausa le slide">Ⅱ</button>
+                <button type="button" data-next aria-label="Schermata successiva">›</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack" id="tecnologie">
+      <div class="wrap">
+        <div class="stack-head reveal"><div><div class="eyebrow">Tecnologie e piattaforme</div><h2 class="section-title">Competenze trasversali, strumenti consolidati.</h2></div><p class="stack-intro">Scegliamo robot, software e reti in base alla tua linea e alle specifiche di progetto.</p></div>
+        <div class="stack-catalog">
+          <div class="stack-group">
+            <h3>Robot industriali</h3>
+            <ul class="robot-grid">
+              <li class="robot-card">
+                <a href="https://library.e.abb.com/public/1191b23d5d564388a77d636084b9ae0e/3HAC044265%20PS%20IRB%206700%20on%20IRC5-en.pdf" target="_blank" rel="noopener noreferrer" aria-label="Scheda ABB IRB 6700 (nuova scheda)">
+                  <span class="robot-brand"><img src="/assets/brands/abb.png" alt="ABB" loading="lazy" decoding="async"></span>
+                  <span class="robot-photo"><img src="/assets/brands/robot-abb.webp" alt="" loading="lazy" decoding="async"></span>
+                  <span class="robot-model">IRB 6700</span>
+                </a>
+              </li>
+              <li class="robot-card">
+                <a href="https://www.kuka.com/en-de/products/robotics-systems/industrial-robots/kr-quantec" target="_blank" rel="noopener noreferrer" aria-label="Scheda KUKA KR QUANTEC (nuova scheda)">
+                  <span class="robot-brand"><img src="/assets/brands/kuka.svg" alt="KUKA" loading="lazy" decoding="async"></span>
+                  <span class="robot-photo"><img src="/assets/brands/robot-kuka.webp" alt="" loading="lazy" decoding="async"></span>
+                  <span class="robot-model">KR QUANTEC</span>
+                </a>
+              </li>
+              <li class="robot-card">
+                <a href="https://www.fanuc.eu/eu-en/product/robot/r-2000ic165f" target="_blank" rel="noopener noreferrer" aria-label="Scheda FANUC R-2000iC/165F (nuova scheda)">
+                  <span class="robot-brand"><img src="/assets/brands/fanuc.svg" alt="FANUC" loading="lazy" decoding="async"></span>
+                  <span class="robot-photo"><img src="/assets/brands/robot-fanuc.webp" alt="" loading="lazy" decoding="async"></span>
+                  <span class="robot-model">R-2000iC/165F</span>
+                </a>
+              </li>
+              <li class="robot-card">
+                <a href="https://www.yaskawa.it/robot/movimentazione-assemblaggio/productdetail/product/gp180_708" target="_blank" rel="noopener noreferrer" aria-label="Scheda Yaskawa MOTOMAN GP180 (nuova scheda)">
+                  <span class="robot-brand"><img src="/assets/brands/yaskawa.png" alt="Yaskawa" loading="lazy" decoding="async"></span>
+                  <span class="robot-photo"><img src="/assets/brands/robot-yaskawa.webp" alt="" loading="lazy" decoding="async"></span>
+                  <span class="robot-model">MOTOMAN GP180</span>
+                </a>
+              </li>
+              <li class="robot-card">
+                <a href="https://www.comau.com/en/our-offer/products-and-solutions/robot-team/nj-220-2-7/" target="_blank" rel="noopener noreferrer" aria-label="Scheda Comau NJ-220-2.7 (nuova scheda)">
+                  <span class="robot-brand"><img src="/assets/brands/comau.png" alt="Comau" loading="lazy" decoding="async"></span>
+                  <span class="robot-photo"><img src="/assets/brands/robot-comau.webp" alt="" loading="lazy" decoding="async"></span>
+                  <span class="robot-model">NJ-220-2.7</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="controls-grid">
+            <section class="stack-group capability-panel plc-panel" aria-labelledby="plc-title">
+              <h3 id="plc-title">Software PLC</h3>
+              <ul class="technology-list">
+              <li><span class="brand-plate"><img src="/assets/brands/allenbradley.svg" alt="" loading="lazy" decoding="async"></span><span>PLC Allen-Bradley</span></li>
+              <li><span class="brand-plate"><img src="/assets/brands/rockwellautomation.png" alt="Rockwell Automation" loading="lazy" decoding="async"></span><span>RSLogix 500 / Studio 5000</span></li>
+              <li><span class="software-preview"><img src="/assets/brands/tia-portal.webp" alt="" loading="lazy" decoding="async"></span><span>Siemens TIA Portal</span></li>
+              <li><span class="software-preview"><img src="/assets/brands/step-7.webp" alt="" loading="lazy" decoding="async"></span><span>SIMATIC STEP 7</span></li>
+              </ul>
+            </section>
+            <section class="stack-group capability-panel network-panel" aria-labelledby="network-title">
+              <h3 id="network-title">Reti industriali</h3>
+              <ul class="technology-list">
+              <li><span class="brand-plate protocol-mark"><img src="/assets/brands/profinet.png" alt="" loading="lazy" decoding="async"></span><span>PROFINET</span></li>
+              <li><span class="brand-plate protocol-mark"><img src="/assets/brands/profibus.png" alt="" loading="lazy" decoding="async"></span><span>PROFIBUS</span></li>
+              <li><span class="brand-plate protocol-mark"><img src="/assets/brands/devicenet.png" alt="" loading="lazy" decoding="async"></span><span>DeviceNet</span></li>
+              <li><span class="brand-plate protocol-mark"><img src="/assets/brands/ethernet-ip.png" alt="" loading="lazy" decoding="async"></span><span>EtherNet/IP</span></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="standards" id="standard">
+      <div class="wrap">
+        <div class="standards-head reveal"><div><div class="eyebrow">Standard automotive</div><h2 class="section-title">Esperienza OEM. Metodo adattabile.</h2></div><p class="section-copy">Conosciamo standard e ambienti produttivi di diversi costruttori. Il progetto può seguire le specifiche esistenti o sviluppare procedure personalizzate.</p></div>
+        <div class="standards-grid">
+          <article class="standard"><div class="standard-marks"><span class="brand-plate"><img src="/assets/brands/fiat.png" alt="" loading="lazy" decoding="async"></span></div><div><h3>CARS · FIAT</h3><p>Standard e procedure automotive Fiat.</p></div></article>
+          <article class="standard"><div class="standard-marks"><span class="brand-plate"><img src="/assets/brands/ford.png" alt="" loading="lazy" decoding="async"></span></div><div><h3>DCP · Ford</h3><p>Standard di programmazione Ford.</p></div></article>
+          <article class="standard"><div class="standard-marks"><span class="brand-plate"><img src="/assets/brands/opel.png" alt="" loading="lazy" decoding="async"></span></div><div><h3>OVCS Global · Opel</h3><p>Specifiche globali Opel.</p></div></article>
+          <article class="standard"><div class="standard-marks"><span class="brand-plate"><img src="/assets/brands/stellantis.svg" alt="" loading="lazy" decoding="async"></span></div><div><h3>STL19 · Stellantis</h3><p>Standard industriale Stellantis.</p></div></article>
+          <article class="standard"><div class="standard-marks"><span class="brand-plate"><img src="/assets/brands/kuka.svg" alt="" loading="lazy" decoding="async"></span></div><div><h3>KUKA · MA</h3><p>Ambiente e requisiti KUKA MA.</p></div></article>
+          <article class="standard"><div class="standard-marks"><span class="brand-plate"><img src="/assets/brands/nissan.png" alt="" loading="lazy" decoding="async"></span><span class="brand-plate"><img src="/assets/brands/renault.png" alt="" loading="lazy" decoding="async"></span></div><div><h3>Nissan · Renault</h3><p>Specifiche e procedure di progetto.</p></div></article>
+          <article class="standard custom-standard"><span class="standard-icon">+</span><div><h3>Standard personalizzati</h3><p>Adattiamo metodi, documentazione e convenzioni alle esigenze della linea e agli standard del cliente.</p></div></article>
+        </div>
+        <p class="brand-note">I marchi dei produttori identificano piattaforme e standard trattati.</p>
+      </div>
+    </section>
+
+    <section class="ai-section" id="tecnologia-ai">
+      <div class="ai-color-wave" aria-hidden="true"></div>
+      <div class="wrap ai-grid ai-with-phone reveal">
+        <div><div class="eyebrow">Intelligenza applicata</div><h2 class="section-title">AI che supporta il lavoro tecnico.</h2><p class="section-copy">Utilizziamo strumenti AI per rendere più efficace il processo di progettazione e di intervento, per rendere più fluido il passaggio tra attività offline e onsite. Il team verifica le decisioni tecniche e i risultati in linea.</p></div>
+        <div class="ai-points">
+          <div class="ai-point"><b>Analisi più rapida</b><p>Organizzazione di dati, documenti e informazioni utili alla preparazione del progetto.</p></div>
+          <div class="ai-point"><b>Preparazione più fluida</b><p>Supporto nella revisione di sequenze, note tecniche e materiali prima delle attività onsite.</p></div>
+          <div class="ai-point"><b>Supporto sul campo</b><p>Accesso più immediato alle informazioni durante commissioning e risoluzione delle criticità.</p></div>
+          <div class="ai-point"><b>Qualità sotto controllo</b><p>La tecnologia assiste il team; le scelte tecniche e la validazione restano responsabilità umana.</p></div>
+        </div>
+        <figure class="weld-demo">
+          <div class="weld-device">
+            <div class="weld-device-screen">
+              <div class="weld-camera" aria-hidden="true"></div>
+              <div class="weld-mini-model">
+                <video class="weld-phone-video" loop muted playsinline preload="none"
+                  poster="/assets/showcase/weld-poster.jpg" aria-label="Demo originale di Weld-Inspector 3D su smartphone">
+                  <source src="/assets/showcase/weld-phone-demo.mp4" type="video/mp4">
+                </video>
+                <div class="weld-phone-video-glow" aria-hidden="true"></div>
+              </div>
+              <div class="weld-home" aria-hidden="true"></div>
+            </div>
+          </div>
+          <figcaption>Weld-Inspector 3D</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact" id="contatti" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm">
+            <h2 id="contact-title">Contatti</h2>
+            <div class="contact-fields">
+              <div class="contact-identity">
+                <div class="form-row"><div class="field"><label for="name">Nome</label><input id="name" name="name" autocomplete="name" required placeholder="Il tuo nome"></div><div class="field"><label for="company">Azienda</label><input id="company" name="company" autocomplete="organization" placeholder="Azienda"></div></div>
+                <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required placeholder="nome@azienda.it"></div>
+              </div>
+              <div class="field contact-message"><label for="message">Di cosa hai bisogno?</label><textarea id="message" name="message" required placeholder="Descrivi brevemente il progetto, lo standard o il supporto richiesto"></textarea></div>
+            </div>
+            <button class="button primary" type="submit">Prepara la richiesta</button>
+            <p class="form-hint">Anteprima del sito: il modulo prepara il testo della richiesta da copiare. Email aziendale e invio diretto verranno configurati prima della pubblicazione definitiva.</p>
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+        <footer class="contact-foot"><div class="footer-brand"><img src="/assets/a2m-brand-horizontal.png" width="534" height="74" alt="A²M Automation · Robotics · Software · Automation"></div><span>© <span id="year"></span> A²M Automation</span></footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="/assets/site-bilingual.js"></script>
+</body>
+</html>
