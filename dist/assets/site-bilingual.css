@@ -383,6 +383,8 @@
     .contact-form h2 { margin: 0 0 24px; font-size: clamp(1.75rem, 4vw, 2.55rem); letter-spacing: -.045em; }
     .form-row > *, .contact-form input, .contact-form textarea { min-width: 0; }
     .contact-form textarea { min-height: 130px; }
+    .contact-download { display: flex; justify-content: flex-end; }
+    .contact-download .button { max-width: 100%; white-space: normal; text-align: center; }
     .company-footer {
       padding: clamp(30px, 4vw, 56px) 0 28px;
       background: var(--ink-2);
