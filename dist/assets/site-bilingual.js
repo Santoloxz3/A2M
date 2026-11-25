@@ -193,6 +193,45 @@
         metrics.classList.toggle('visible', entry.isIntersecting);
       }, {threshold: .2, rootMargin: '-72px 0px 0px'});
       metricsObserver.observe(metrics);
+
+      const experience = metrics.querySelector('.metric strong');
+      const experienceLabel = experience.textContent;
+      const yearsSuffix = experienceLabel.slice('15+'.length);
+      const firstYearLabel = localText('1 anno', '1 year');
+      let experienceFrame = 0;
+      function stopExperienceCount() {
+        cancelAnimationFrame(experienceFrame);
+        experienceFrame = 0;
+        experience.textContent = experienceLabel;
+      }
+
+      let experienceInView = false;
+      const experienceObserver = new IntersectionObserver(([entry]) => {
+        if (!entry.isIntersecting) {
+          experienceInView = false;
+          stopExperienceCount();
+          return;
+        }
+        if (entry.intersectionRatio < .5 || experienceInView) return;
+        experienceInView = true;
+        if (reducedMotion.matches) return;
+
+        experience.textContent = firstYearLabel;
+        const start = performance.now();
+        function count(now) {
+          const years = Math.min(15, 1 + Math.floor((now - start) / 70));
+          if (years === 15) {
+            stopExperienceCount();
+            return;
+          }
+          experience.textContent = years === 1 ? firstYearLabel : years + yearsSuffix;
+          experienceFrame = requestAnimationFrame(count);
+        }
+        experienceFrame = requestAnimationFrame(count);
+      }, {threshold: [0, .5], rootMargin: '-78px 0px 0px'});
+      experienceObserver.observe(experience);
+      reducedMotion.addEventListener('change', stopExperienceCount);
+
       const terminalObserver = new IntersectionObserver(([entry]) => {
         terminalVisible = entry.isIntersecting;
         if (terminalVisible) typeTerminal();
